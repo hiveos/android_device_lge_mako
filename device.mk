@@ -35,6 +35,18 @@ PRODUCT_PACKAGES += \
     charger_res_images \
     charger
 
+#Hive Awesomeness
+PRODUCT_PACKAGES := \
+	Notebooks \
+	Books \
+	NFCReader \
+	NFCWriter 
+
+#New Google Experience launcher and Google Now
+PRODUCT_PACKAGES := \
+	GoogleHome \
+	QuickSearchBox
+
 ifneq ($(findstring svelte, $(TARGET_PRODUCT)),)
 LOCAL_KERNEL := device/lge/mako_svelte-kernel/kernel
 else
